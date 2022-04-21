@@ -10,9 +10,7 @@ from tkcalendar import *
 from tkinter import messagebox, ttk
 from tkcalendar import Calendar, DateEntry
 from datetime import date
-
-#from timer import count
-#from to_do_list import newTask
+from Libro import *
 
 def genevaControl():
     control=Tk()
@@ -277,13 +275,9 @@ def genevaControl():
 
     lb.config(yscrollcommand=sb.set)
     sb.config(command=lb.yview)
-
-    #my_entry = Entry(
-        # Control,
-        #font=("Arial 10")
-        #)
-
-    #my_entry.place(x="510", y="526")
+    
+    my_entry=Entry(control, font="Arial 10")
+    my_entry.place(x="510", y="526")
 
     addTask_btn = Button(
         text='Añadir tarea',
